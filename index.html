@@ -1724,7 +1724,7 @@ vertical-align: middle;
 													<div class="dropdown-menu dropdown-menu-right">
 														<ul class="kt-nav">
 															<li class="kt-nav__section kt-nav__section--first">
-																<span class="kt-nav__section-text">The output file data depends on the results displayed on the website. (Select format to download)</span>
+																<span class="kt-nav__section-text">Select format</span>
 															</li>
 															<!-- <li class="kt-nav__item disabled">
 																<a href="https://tuannv95.github.io/habit_tracker/custom/pages/error/" class="kt-nav__link disabled">
@@ -1751,7 +1751,7 @@ vertical-align: middle;
 																</a>
 															</li> -->
 															<li class="kt-nav__item">
-																<a id="create_pdf" class="kt-nav__link">
+																<a class="kt-nav__link" data-toggle="modal" data-target="#exampleModalCenter">
 																	<i class="kt-nav__link-icon la la-file-pdf-o"></i>
 																	<span class="kt-nav__link-text">PDF Format</span>
 																</a>
@@ -1760,7 +1760,7 @@ vertical-align: middle;
 													</div>
 												</div>
 												&nbsp;
-												<a href="https://tuannv95.github.io/habit_tracker/custom/pages/error/" class="btn disabled btn-brand btn-elevate btn-icon-sm">
+												<a href="https://tuannv95.github.io/habit_tracker/custom/pages/error/" class="btn disabled btn-brand btn-elevate btn-icon-sm" hidden>
 													<i class="la la-plus"></i>
 													Add Date
 												</a>
@@ -3176,6 +3176,29 @@ vertical-align: middle;
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="display: none;">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">PDF Download</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>The output file data depends on the data displayed on the website. Best support when exporting files on computer.<br> 
+							To export all data, the data on the web page must be displayed accordingly.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-outline-brand" data-dismiss="modal">Close</button>
+						<button id="create_pdf" type="button" class="btn btn-outline-brand" data-dismiss="modal">Download</button>
 					</div>
 				</div>
 			</div>
